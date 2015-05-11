@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F423AF468B333DF0D845ED3 /* libPods-OrigamiAnimationTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B733A23A32AC6C67C90463 /* libPods-OrigamiAnimationTest.a */; };
 		DDF0EAB91B00587B00389B80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0EAB81B00587B00389B80 /* main.m */; };
 		DDF0EABC1B00587B00389B80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0EABB1B00587B00389B80 /* AppDelegate.m */; };
 		DDF0EABF1B00587B00389B80 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF0EABE1B00587B00389B80 /* ViewController.m */; };
@@ -27,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		189623474813C39B07888579 /* Pods-OrigamiAnimationTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrigamiAnimationTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrigamiAnimationTest/Pods-OrigamiAnimationTest.debug.xcconfig"; sourceTree = "<group>"; };
+		47B733A23A32AC6C67C90463 /* libPods-OrigamiAnimationTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OrigamiAnimationTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB58AE654A1DE180F6109EA /* Pods-OrigamiAnimationTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrigamiAnimationTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrigamiAnimationTest/Pods-OrigamiAnimationTest.release.xcconfig"; sourceTree = "<group>"; };
 		DDF0EAB31B00587B00389B80 /* OrigamiAnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrigamiAnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDF0EAB71B00587B00389B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDF0EAB81B00587B00389B80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F423AF468B333DF0D845ED3 /* libPods-OrigamiAnimationTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		155ECF78BFCFD7A423AEED85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				189623474813C39B07888579 /* Pods-OrigamiAnimationTest.debug.xcconfig */,
+				8BB58AE654A1DE180F6109EA /* Pods-OrigamiAnimationTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A2AE6DB7A93F88CC8F356BB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47B733A23A32AC6C67C90463 /* libPods-OrigamiAnimationTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DDF0EAAA1B00587B00389B80 = {
 			isa = PBXGroup;
 			children = (
 				DDF0EAB51B00587B00389B80 /* OrigamiAnimationTest */,
 				DDF0EACF1B00587B00389B80 /* OrigamiAnimationTestTests */,
 				DDF0EAB41B00587B00389B80 /* Products */,
+				155ECF78BFCFD7A423AEED85 /* Pods */,
+				A2AE6DB7A93F88CC8F356BB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDF0EAD61B00587B00389B80 /* Build configuration list for PBXNativeTarget "OrigamiAnimationTest" */;
 			buildPhases = (
+				A6BB344AE6BEB9F508E3BD84 /* Check Pods Manifest.lock */,
 				DDF0EAAF1B00587B00389B80 /* Sources */,
 				DDF0EAB01B00587B00389B80 /* Frameworks */,
 				DDF0EAB11B00587B00389B80 /* Resources */,
+				A40597C510295D399F7ED71F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A40597C510295D399F7ED71F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrigamiAnimationTest/Pods-OrigamiAnimationTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6BB344AE6BEB9F508E3BD84 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DDF0EAAF1B00587B00389B80 /* Sources */ = {
@@ -341,6 +400,7 @@
 		};
 		DDF0EAD71B00587B00389B80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 189623474813C39B07888579 /* Pods-OrigamiAnimationTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OrigamiAnimationTest/Info.plist;
@@ -351,6 +411,7 @@
 		};
 		DDF0EAD81B00587B00389B80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BB58AE654A1DE180F6109EA /* Pods-OrigamiAnimationTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OrigamiAnimationTest/Info.plist;
@@ -412,6 +473,7 @@
 				DDF0EAD81B00587B00389B80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDF0EAD91B00587B00389B80 /* Build configuration list for PBXNativeTarget "OrigamiAnimationTestTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +482,7 @@
 				DDF0EADB1B00587B00389B80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
